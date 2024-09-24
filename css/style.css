@@ -1,10 +1,27 @@
 /********** Template CSS **********/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 :root {
     --primary: #6222CC;
     --secondary: #FBA504;
     --light: #F6F4F9;
     --dark: #04000B;
 }
+
+
+
+.font-family{
+    font-family: "Cairo", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+.icon{
+    font-family: "Font Awesome 5 Free" !important;
+}
+
 
 
 /*** Spinner ***/
@@ -91,7 +108,7 @@ h6,
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f067";
-    font-family: "Font Awesome 5 Free";
+    /* font-family: "Font Awesome 5 Free"; */
     font-size: 10px;
     font-weight: bold;
     vertical-align: middle;
@@ -102,7 +119,7 @@ h6,
     position: relative;
     margin-right: 25px;
     padding: 35px 0;
-    font-family: 'Jost', sans-serif;
+    /* font-family: 'Jost', sans-serif; */
     font-size: 18px;
     font-weight: 500;
     color: var(--light) !important;
@@ -217,7 +234,7 @@ h6,
         url(../img/blob-top-right.png),
         url(../img/blob-bottom-left.png),
         url(../img/blob-bottom-right.png),
-        url(../img/blob-center.png),
+        url(../img/Tawajjah\ logo\ opacity\ 10.png),
         url(../img/bg-bottom.png);
     background-position:
         left 0px top 0px,
@@ -552,7 +569,7 @@ h6,
 .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
-    font-family: "Font Awesome 5 Free";
+    /* font-family: "Font Awesome 5 Free"; */
     font-weight: 900;
     margin-right: 10px;
 }
