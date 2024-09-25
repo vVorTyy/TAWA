@@ -92,3 +92,51 @@
     
 })(jQuery);
 
+
+// let fastSer = document.querySelector(".fast-service")
+// let dirCon = document.querySelector(".dir-contact")
+// let cvInfo = document.querySelector(".cv-info")
+// let contactInfo = document.querySelector(".contact-info")
+
+
+
+// fastSer.addEventListener("click", function(event) {
+//     event.preventDefault(); 
+// });
+
+// dirCon.addEventListener("click", function(event) {
+//     event.preventDefault();
+// });
+
+
+let fastSer = document.querySelector(".fast-service");
+let dirCon = document.querySelector(".dir-contact");
+let cvInfo = document.querySelector(".cv-info");
+let contactInfo = document.querySelector(".contact-info");
+let button = document.querySelector(".button");
+let fastServiceText = document.querySelector(".fast-service-text");
+let contactText = document.querySelector(".contact-text");
+let lastText = document.querySelector(".last-text");
+
+fastSer.addEventListener("click", function(event) {
+    event.preventDefault();
+    cvInfo.style.display = "block";
+    contactInfo.style.display = "block"; 
+    button.style.display = "block"; 
+    fastServiceText.style.display = "block"; 
+    contactText.style.display = "none"; 
+});
+
+dirCon.addEventListener("click", function(event) {
+    event.preventDefault();
+    contactInfo.style.display = "block";
+    cvInfo.style.display = "none";
+    button.style.display = "block"; 
+    contactText.style.display = "block"; 
+    fastServiceText.style.display = "none"; 
+});
+
+button.addEventListener("click", function(event) {
+    // event.preventDefault();
+    lastText.style.display = "block"; 
+});
